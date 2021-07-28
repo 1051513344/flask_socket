@@ -14,6 +14,9 @@ socket.on('connect', function() {
     socket.emit("message", "已连接");
 // socket.emit('my event', {data: 'I\'m connected!'});
 });
+socket.on('message', function(msg) {
+    alert(msg)
+});
 </script>
 </html>
 
